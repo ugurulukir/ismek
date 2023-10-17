@@ -3,9 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms</title>
+    <title>Forms&Input</title>
   </head>
   <body>
-    <form action="get"></form>
+    <form>
+      <!-- Input -->
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="surname">Surname:</label><br />
+      <input type="text" id="surname" name="surname" />
+      <br />
+      <label for="email">Email:</label><br />
+      <input type="email" name="email" id="email" /><br />
+      <label for="password">Password</label><br />
+      <input type="password" name="password" id="password" /><br />
+      <label for="date">Date</label><br />
+      <input type="date" name="date" id="date" /><br />
+      <label for="sex">Sex:</label><br />
+      <label for="Male">Male</label>
+      <input type="radio" name="Male" id="Male" />
+      <label for="Female">Female</label>
+      <input type="radio" name="Female" id="Female" />
+      <label for="other">Other</label>
+      <input type="radio" name="other" id="other" /><br />
+      <label for="hobbies">Hobbies:</label><br />
+      <label for="gym">GYM</label>
+      <input type="checkbox" name="Gym" id="Gym" checked /><br />
+      <label for="cyling">Cycling</label>
+      <input type="checkbox" name="cycling" id="cycling" /><br />
+      <label for="music">Music</label>
+      <input type="checkbox" name="music" id="music" /><br />
+      <label for="degree">Degree:</label><br />
+      <select name="degree" id="degree">
+        <option value="bachelor" selected>Bachelor</option>
+        <option value="MsC">Master of Science</option>
+        <option value="phD">phD</option></select
+      ><br />
+      <label for="message">Your message:</label><br />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Type your message"
+      ></textarea
+      ><br />
+      <input type="submit" value="SEND" />
+      <input type="reset" value="RESET" />
+      <!-- <button type="submit">Gönder</button> -->
+    </form>
   </body>
 </html>
