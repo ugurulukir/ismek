@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table width="100%" border="1" cellpadding="0" cellspacing="0">
+      <!-- bu dört özelliği css ile belirliyoruz -->
+      <!-- sütun da yükseklik satır da genişlik var-->
+      <thead>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr height="50">
+          <td width="30%">a1</td>
+          <td width="15%">a2</td>
+          <td width="30%">a3</td>
+          <td width="15%">a4</td>
+          <td width="10%">a5</td>
+        </tr>
+        <tr height="80">
+          <td>b1</td>
+          <td>b2</td>
+          <td>b3</td>
+          <td>b4</td>
+          <td>b5</td>
+        </tr>
+        <tr>
+          <td>c1</td>
+          <td>c2</td>
+          <td>c3</td>
+          <td>c4</td>
+          <td>c5</td>
+        </tr>
+        <tr>
+          <td>d1</td>
+          <td>d2</td>
+          <td>d3</td>
+          <td>d4</td>
+          <td>d5</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- tablo birleştirme -->
+    <!-- yatay birleştirme(hücre birleştirme) colspan -->
+    <!-- dikey birleştirme(satır birleştirme) rowspan -->
+    <table width="100%" border="1">
+      <tr>
+        <td colspan="2">a1</td>
+        <td>a3</td>
+        <td>a4</td>
+        <td rowspan="4">a5</td>
+      </tr>
+      <tr>
+        <td>b1</td>
+        <td>b2</td>
+        <td>b3</td>
+        <td rowspan="3">b4</td>
+      </tr>
+      <tr>
+        <td>c1</td>
+        <td>c2</td>
+        <td>c3</td>
+      </tr>
+      <tr>
+        <td>d1</td>
+        <td>d2</td>
+        <td>d3</td>
+      </tr>
+    </table>
+  </body>
+</html>
