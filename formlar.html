@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="action_page.php"
+      enctype="multipart/form-data"
+      autocomplete="off"
+    >
+      <label for="name"> Adı Soyadı:</label>
+      <input
+        type="text"
+        name="adsoyad"
+        id="adsoyad"
+        minlength="3"
+        maxlength="10"
+        placeholder="boş bırakmayın"
+        autocomplete="off"
+        required
+      />
+      <br />
+      <label for="tel" id="tel">Telefon:</label>
+      <input type="tel" placeholder="telefon numarası" /><br />
+      <label for="eposta">E-Posta</label>
+      <input type="email" required placeholder="e mailiniz" /><br />
+      <label for="date">Doğum Tarihi</label>
+      <input type="number" min="1900" max="2023" /><br />
+      <label for="text">Tarih</label>
+      <label for="renk">Renk</label>
+      <input type="color" value="#900000" /><br />
+      <input type="date" /><br />
+      <label for="saat"> Doğum tarihi ve saati</label><br />
+      <input type="datetime-local" name="saat" id="saat" /><br />
+      <input type="submit" value="Gönder" />
+      <label for="cins">Cinsiyet</label><br />
+      <input type="radio" checked />Erkek <input type="radio" />Kadın
+      <input type="radio" />Diğer <br />
+      <label for="hobiler">Hobi</label><br />
+      <label for="kitap"
+        ><input type="checkbox" name="hobi[]" id="hobi" />Kitap</label
+      ><br />
+      <input
+        type="file"
+        name="dosya"
+        id="dosya"
+        placeholder="dosya yükle"
+        accept=".xlsx,,docx, image/*, image/png"
+        multiple
+      />
+      <input type="hidden" value="123456" /> <br />
+      <!-- hidden field -->
+      <input type="submit" value="gönder" />
+      <input type="reset" value="sıfırla" />
+      <input type="button" value="yazdır" />
+    </form>
+  </body>
+  <!-- method="get;post"
+
+formların işlenme yöntemini belirler
+
+post güvenli, get güvensiz bir yöntem
+
+action formun nereye gönderileceğini belirtir(php dosyası örneğin)
+
+
+enctype="multipart/form-data" şifreleme yöntemi
+
+minlength  kutu içine yazılabilecek minimum karakter sayısı
+
+maxlength maksimum karakter sayısını belirtir.
+
+   required kutunun doldurulmasını zorunlu kılar
+
+[] checkbox'da dizi, hepsini gönderir, koymazssan son seçilen gönderilir.
+
+file mime type ile dosya türü belirlenir -->
+</html>
