@@ -56,7 +56,42 @@
       <!-- hidden field -->
       <input type="submit" value="gönder" />
       <input type="reset" value="sıfırla" />
-      <input type="button" value="yazdır" />
+      <input type="button" value="yazdır" /><br />
+      <label>Mesaj:</label><br />
+      <textarea
+        name="metin"
+        id="metin"
+        cols="30"
+        rows="5"
+        placeholder="mesajınızı yazın"
+      ></textarea
+      ><br />
+      <input type="number" value="123456789" readonly /><br />
+      <label for="sehir">Şehir:</label>
+      <select name="sehir" id="sehir" required>
+        <option value="">Seçiniz...</option>
+        <optgroup label="Marmara Bölgesi">
+          <option value="34">İstanbul</option>
+        </optgroup>
+        <optgroup label="İç Anadolu Bölgesi">
+          <option value="06" selected>Ankara</option>
+          <option value="58">Sivas</option>
+          <option value="66">Yozgat</option>
+        </optgroup>
+        <optgroup label="Ege Bölgesi">
+          <option value="35">İzmir</option>
+          <option value="09">Aydın</option>
+        </optgroup>
+        <optgroup label="Doğu Anadolu">
+          <option value="25" disabled>Erzurum</option>
+          <option value="44">Malatya</option>
+          <option value="23">Elazığ</option>
+        </optgroup>
+      </select>
+      <br />
+      <button type="submit">Gönder</button>
+      <button type="reset">Sıfırla</button>
+      <button type="button" onclick="window.print()">Yazdır</button>
     </form>
   </body>
   <!-- method="get;post"
