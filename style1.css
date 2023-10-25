@@ -1,0 +1,69 @@
+/* h1 {
+  color: red;
+  background-color: blue;
+}
+p {
+  color: red;
+  background-color: blue;
+} */
+
+/* basic selectors */
+
+/* h1,
+p {
+  color: red;
+  background-color: blue;
+} */
+
+/* combining selectors */
+
+/* #red {
+  color: red;
+  background-color: blue;
+} */
+/* id selector */
+
+/* .info {
+  color: red;
+  background-color: blue;
+} */
+
+/* class selector */
+
+/* combining id and class */
+
+/* #logo,
+.lead{
+  color: red;
+  background-color: blue;
+} */
+
+/* #para1.lead {
+  color: red;
+  background: blue;
+} */
+
+/* a {
+  text-decoration: none;
+} */
+/* linklerin alt çizgileri kalkar */
+
+/* parent element (ebeveyn element) */
+/* ul li a {
+  text-decoration: none;
+}
+.info span {
+  color: red;
+} */
+
+.info .primary {
+  color: red;
+}
+
+/* specificity in selectors */
+
+/* universal selector */
+
+* {
+  font-size: 30px;
+}
