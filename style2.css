@@ -1,0 +1,21 @@
+.box-1 {
+  background-color: seagreen;
+  color: white;
+}
+.box-2 {
+  /* width: 640px;
+  height: 360px;
+  background-image: url(images/desktop-1920x1080.jpg);
+  background-size: cover;
+  color: white; */
+  /* background-image: url(images/flamme.png);
+  background-size: 100px;
+  background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; x ekseninde tekrarlanır */
+  /* background-position: right bottom; */
+  /* resimin konumunu değiştirir, sol üst, sağ alt vb */
+  /* background-attachment: fixed; */
+  /* scroll ile sayfayı kaydırdıkça görsel sabit kalır */
+  background: url(images/flamme.png) no-repeat center center fixed;
+  background-size: 100px;
+}
