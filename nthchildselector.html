@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 1.5em;
+      }
+      ul {
+        font-size: 1.5em;
+        list-style: none;
+      }
+      ul li:nth-child(2n) {
+        color: red;
+      }
+      ul li:nth-child(2n + 1) {
+        color: blue;
+      }
+      /* tek çift maddeleri formülle seçme */
+      ul li:nth-child(n + 4) {
+        background: black;
+      }
+
+      /* p:first-child {
+        background: blue;
+      }
+      p:last-child {
+        background: blue;
+      }
+      p:nth-child(1) {
+        color: red;
+      }
+      p:nth-child(3) {
+        color: blue;
+      } */
+      p:nth-child(even) {
+        color: red;
+      }
+      p:nth-child(odd) {
+        color: blue;
+      }
+      /* an + b n=0,b=0  */
+    </style>
+  </head>
+  <body>
+    <!-- <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+      aperiam!
+    </p>
+    <p>
+      Mollitia praesentium autem ex facere, quis enim quisquam quaerat placeat?
+    </p>
+    <p>
+      Cum voluptatibus ipsam odit obcaecati provident magnam voluptatem adipisci
+      animi.
+    </p>
+    <p>Enim, dolor accusantium odit sed aliquid ut quibusdam a eius!</p>
+    <p>
+      Voluptatibus nesciunt rerum rem omnis atque velit aut deleniti molestias?
+    </p> -->
+    <ul>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+      <li>Element</li>
+    </ul>
+  </body>
+</html>
