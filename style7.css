@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 75%;
+  /* öğeleri main axis'de sıralamak için justify-content komutları kullanılır */
+  /* justify-content: flex-start; */
+  justify-content: flex-start;
+  /* flex-start ile soldan başlayarak main axis üzerinde ögeler dizilir */
+  /* flex-end ile sağ tarafa yaslayabilirsin */
+  /* center ile öğeler flexbox'ın tam ortasına gelir */
+  /* space-between ile ilk kutu en solda iki kutu ortada son kutu en sağa yaslıdır */
+  /* space evenly ile her taraftaki boşluklar eşit olur */
+  /* space around'da ise her iki öğe arasındaki boşluklar sağdaki ve soldaki boşlukların iki katı olur */
+  /* flex start ile flex'in en başından başlayarak sıralanır */
+  /* align-items: flex-end; */
+  /* varsayılan değeri stretch */
+  /* center: yukarıdan aşağıya doğru ortalar */
+  /* flex-start sol üste gelir */
+  /* align-items: center; */
+  /* yatayda ortalamak için align-items: center komutunu kullanırız */
+  min-height: 600px;
+  /* taşma olmaması için genişliği min-height olarak ver */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  /* varsayılan değeri row dikey olarak sıralanmasını istiyorsan column seç */
+  /* column ile yatayda align-items, dikeyde justify-content kullanılır */
+  flex-wrap: wrap;
+  /* varsayılan değeri nowrap, bu komutlar öğeler satıra sığmadığı zaman bir alttaki satıra kaydırırız. */
+
+  background: black;
+}
+.box {
+  text-align: center;
+  background: #f2f2f2;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.box-1 {
+  /* order: 3; */
+  background: red;
+  /* flex-grow: 1; */
+}
+.box-2 {
+  /* order: 1; */
+  background: blue;
+  /* align-self: flex-start; */
+  /* kutunun kendi içinde de container'dan bağımsız bir alignment verebiliyoruz */
+  /* flex-grow: 2; */
+  flex: 1;
+}
+.box-3 {
+  /* order: 2; */
+  /* kendi içinde order değeri vererek kutuların sırasını değiştirebilirsin */
+  background: green;
+  /* flex-grow: 3; */
+  flex: 1;
+}
