@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uğur ULUKIR | Programlama Eğitimleri</title>
+    <meta name="keywords" content="Python, Java, JavaScript" />
+    <meta name="description" content="Uğur ULUKIR | Programlama Eğitimleri" />
+    <meta name="author" content="Uğur ULUKIR u.ulukir@gmail.com " />
+    <meta name="copyright" content="Uğur ULUKIR 2023" />
+    <!-- Fonts Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- tablet -- 768 px ve altına düşüldüğünde  -->
+    <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css" />
+    <!-- mobile -->
+    <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css" />
+  </head>
+  <body>
+    <header class="bg-dark-blue">
+      <div class="container">
+        <nav id="navbar">
+          <h1 class="text-center">Uğur ULUKIR</h1>
+          <ul>
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#training">Eğitimler</a></li>
+            <li><a href="#courses">Kurslar</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="home">
+      <img
+        src="images/131027456.jpeg"
+        width="300px"
+        height="300px"
+        alt="Uğur ULUKIR"
+      />
+      <div class="name">
+        <h2 class="heading-big">Uğur ULUKIR</h2>
+        <p>Software Developer | Founder of Yazılım Atölyesi</p>
+      </div>
+      <a href="#courses" class="btn btn-primary">Kurslara git</a>
+    </section>
+    <section id="training" class="bg-dark-blue">
+      <h3 class="text-center heading-medium">Eğitimler</h3>
+      <div class="items">
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Sınıf İçi Eğitimler</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
+            incidunt?
+          </p>
+        </article>
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Online İçerikler</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
+            incidunt?
+          </p>
+        </article>
+        <article class="item">
+          <i class="fa fa-pencil-alt"></i>
+          <h3>Konferanslar</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet,
+            incidunt?
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="courses">
+      <h3 class="text-center heading-medium">Kurslar</h3>
+      <div class="container">
+        <div class="courses">
+          <!-- Course-1 -->
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/images/python.png"
+                alt="Python"
+                width="250px"
+                height="200px"
+              />
+              <span>%90 İndirim</span>
+            </div>
+            <div class="course-info">
+              <div class="title">Python İle Programlama Kursu</div>
+              <div class="description">
+                Sıfırdan İleriye Python Programlama Kursu |Temel düzeyden Python
+                öğrenin!
+              </div>
+              <div class="instructor">Uğur ULUKIR, Alyona KOVALCHUK</div>
+              <div class="rating">4.6 | (5000 Oylama)</div>
+            </div>
+          </div>
+          <!-- Course-2 -->
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/images/java.jpg"
+                alt="Java"
+                width="250px"
+                height="200px"
+              />
+              <span>%90 İndirim</span>
+            </div>
+            <div class="course-info">
+              <div class="title">Java İle Programlama Kursu</div>
+              <div class="description">
+                Sıfırdan İleriye Java Programlama Kursu |Temel düzeyden Java
+                öğrenin!
+              </div>
+              <div class="instructor">Uğur ULUKIR, Elena KUSHKOW</div>
+              <div class="rating">4.9 | (9000 Oylama)</div>
+            </div>
+          </div>
+          <!-- Course-3 -->
+          <div class="course">
+            <div class="course-image">
+              <img
+                src="/images/js.jpg"
+                alt="JavaScript"
+                width="250px"
+                height="200px"
+              />
+              <span>%90 İndirim</span>
+            </div>
+            <div class="course-info">
+              <div class="title">Temel ve İleri Düzey JavaScript Kursu</div>
+              <div class="description">
+                Sıfırdan İleriye JavaScript Kursu |Temel düzeyden JavaScript
+                öğrenin!
+              </div>
+              <div class="instructor">Alyona KOVALCHUK, Pawel ZAPATOCHNY</div>
+              <div class="rating">4.8 | (7000 Oylama)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="bg-dark-blue">
+      <div class="contact-form">
+        <form>
+          <h4 class="text-center heading-medium">Bize Ulaşın</h4>
+          <div class="form-group">
+            <label for="name">İsim</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="İsim"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-Posta</label>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="E-Posta"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mesajınız</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              class="form-control"
+              placeholder="Mesajınız"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Gönder</button>
+        </form>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
